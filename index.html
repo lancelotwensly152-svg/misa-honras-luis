@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Memoriam - LUIS ALBERTO GIL SANCHEZ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Great+Vibes&family=Inter:wght@300;400;600&family=Playfair+Display:italic,wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #d4af37;
+            --gold-light: #f3e5ab;
+            --slate-deep: #1e293b;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at center, #f8fafc 0%, #e2e8f0 100%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        
+        .card-container {
+            background: #ffffff;
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)),
+                url('https://www.transparenttextures.com/patterns/handmade-paper.png');
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Decoración de esquinas */
+        .corner-decoration {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border: 2px solid var(--gold);
+            opacity: 0.3;
+            z-index: 10;
+        }
+        .top-left { top: 15px; left: 15px; border-right: 0; border-bottom: 0; }
+        .top-right { top: 15px; right: 15px; border-left: 0; border-bottom: 0; }
+        .bottom-left { bottom: 15px; left: 15px; border-right: 0; border-top: 0; }
+        .bottom-right { bottom: 15px; right: 15px; border-left: 0; border-top: 0; }
+
+        /* Estilo de las palomas */
+        .dove {
+            position: absolute;
+            opacity: 0.15;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .font-serif-elegant { font-family: 'Cinzel', serif; }
+        .font-cursive { font-family: 'Great Vibes', cursive; }
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        
+        .fade-in-up {
+            animation: fadeInUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .photo-frame {
+            position: relative;
+            width: 200px;
+            height: 260px;
+            margin: 0 auto;
+            padding: 8px;
+            background: white;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            z-index: 5;
+        }
+        
+        .photo-frame::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            border: 1px solid var(--gold);
+            margin: 4px;
+            pointer-events: none;
+        }
+
+        .gold-divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, var(--gold), transparent);
+            width: 60%;
+            margin: 1.5rem auto;
+            position: relative;
+        }
+        
+        .gold-divider::before {
+            content: '⬥';
+            color: var(--gold);
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            padding: 0 10px;
+        }
+
+        .btn-maps {
+            background: var(--slate-deep);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-maps:hover {
+            background: #000;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+
+    <div class="max-w-md w-full card-container rounded-xl fade-in-up p-8 sm:p-12 text-center">
+        
+        <!-- Palomas decorativas integradas -->
+        <svg class="dove top-10 right-10 w-16 h-16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M21,11C21,11 18,13 11,13C4,13 1,11 1,11C1,11 3,12 11,12C19,12 21,11 21,11M11,2C11,2 8,6 11,9C14,6 11,2 11,2M11,13C11,13 13,18 11,22C9,18 11,13 11,13Z" opacity="0.5"/>
+        </svg>
+
+        <svg class="dove bottom-40 left-[-10px] w-24 h-24 rotate-12" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M21,11C21,11 18,13 11,13C4,13 1,11 1,11C1,11 3,12 11,12C19,12 21,11 21,11M11,2C11,2 8,6 11,9C14,6 11,2 11,2M11,13C11,13 13,18 11,22C9,18 11,13 11,13Z" opacity="0.3"/>
+        </svg>
+        
+        <!-- Esquinas decorativas -->
+        <div class="corner-decoration top-left"></div>
+        <div class="corner-decoration top-right"></div>
+        <div class="corner-decoration bottom-left"></div>
+        <div class="corner-decoration bottom-right"></div>
+
+        <!-- Cruz solemne -->
+        <div class="mb-6 relative">
+            <span class="text-[#d4af37] text-5xl block opacity-80">†</span>
+        </div>
+
+        <header class="mb-6">
+            <h2 class="font-serif-elegant text-xs tracking-[0.4em] text-gray-500 uppercase mb-2">In Memoriam</h2>
+            <h1 class="font-serif-elegant text-xl font-bold text-gray-800 tracking-wider">Misa de Honras</h1>
+            <div class="gold-divider"></div>
+        </header>
+        
+        <div class="space-y-6">
+            <p class="text-sm text-gray-500 font-light leading-relaxed px-4">
+                Su esposa e hijos tienen el sentimiento de invitar a usted a la ceremonia religiosa por el primer año del sensible fallecimiento de:
+            </p>
+
+            <!-- Fotografía -->
+            <div class="photo-frame">
+                <img src="https://i.postimg.cc/FzPRxrYq/Whats-App-Image-2026-05-07-at-7-52-41-PM.jpg" 
+                     alt="Luis Alberto Gil Sanchez" 
+                     class="w-full h-full object-cover grayscale-[15%] brightness-105">
+            </div>
+
+            <!-- Nombre -->
+            <div class="py-2">
+                <h3 class="font-cursive text-5xl text-gray-900 drop-shadow-sm">Luis Alberto Gil Sanchez</h3>
+            </div>
+            
+            <div class="gold-divider"></div>
+
+            <!-- Mensaje espiritual -->
+            <p class="font-playfair italic text-sm text-gray-600 px-6 leading-relaxed">
+                "No es un adiós, sino un hasta luego. Porque mientras vivas en nuestros corazones, nunca te habrás ido del todo."
+            </p>
+
+            <!-- Datos del Evento -->
+            <div class="bg-slate-50/80 rounded-lg p-6 border border-gray-100 flex justify-center items-center gap-8 shadow-inner relative overflow-hidden">
+                <div class="text-center">
+                    <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1">Mayo</p>
+                    <div class="flex items-baseline justify-center">
+                        <span class="text-xs text-gray-400 font-serif-elegant mr-1">SÁB</span>
+                        <span class="text-4xl font-bold text-gray-800">23</span>
+                    </div>
+                    <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-1">2026</p>
+                </div>
+                
+                <div class="w-px h-16 bg-gradient-to-b from-transparent via-gray-200 to-transparent"></div>
+                
+                <div class="text-center">
+                    <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1">Hora</p>
+                    <p class="text-3xl font-bold text-gray-800">7:00</p>
+                    <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-1">P.M.</p>
+                </div>
+            </div>
+
+            <!-- Ubicación -->
+            <div class="space-y-1">
+                <p class="font-serif-elegant text-[10px] text-amber-700 font-bold uppercase tracking-widest">Lugar de la Misa</p>
+                <p class="text-base font-semibold text-gray-800">Capilla Familia de Nazareth</p>
+                <p class="text-xs text-gray-500 italic">Alt. paradero 16 de Canto Grande, SJL</p>
+            </div>
+
+            <!-- Nota de Recepción -->
+            <div class="relative py-4 px-6">
+                <div class="absolute inset-0 bg-amber-50/20 rounded-full blur-2xl"></div>
+                <p class="relative text-gray-600 text-[11px] leading-relaxed italic">
+                    Finalizada la ceremonia, nos complacería que nos acompañen a compartir un momento de unión y gratitud en nuestro hogar.
+                </p>
+            </div>
+
+            <!-- Botón Maps -->
+            <div class="pt-4">
+                <a href="https://maps.app.goo.gl/rfwztBa3BSQkx33eA" target="_blank" 
+                   class="btn-maps flex items-center justify-center w-full py-4 text-white rounded-full text-[11px] uppercase tracking-[0.2em] font-bold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    Abrir Ubicación en Maps
+                </a>
+            </div>
+
+            <footer class="mt-8 flex flex-col items-center gap-2">
+                <svg class="w-8 h-8 text-gray-300 opacity-50" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M21,11C21,11 18,13 11,13C4,13 1,11 1,11C1,11 3,12 11,12C19,12 21,11 21,11M11,2C11,2 8,6 11,9C14,6 11,2 11,2M11,13C11,13 13,18 11,22C9,18 11,13 11,13Z"/>
+                </svg>
+                <p class="text-[9px] text-gray-400 uppercase tracking-[0.4em] font-medium">Agradecemos su presencia y oraciones</p>
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>
